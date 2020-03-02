@@ -37,8 +37,8 @@ public class AddController extends HttpServlet {
 		int age=Integer.parseInt(request.getParameter("ages"));
 		//创建一个用户对象
 		Users user=new Users();
-		user.setName(name);
-		user.setAge(age);
+		user.setName("张三");
+		user.setAge(12);
 		//保存用户的方法
 		us.save(user);
 	}
